@@ -28,6 +28,7 @@
 		EBC1ECFD253D98D8008E567C /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1ECFC253D98D8008E567C /* CountryDetailView.swift */; };
 		EBC1ED00253DB638008E567C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1ECFF253DB638008E567C /* MapView.swift */; };
 		EBC1ED03253DBA2F008E567C /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1ED02253DBA2F008E567C /* MapContainerView.swift */; };
+		EBC1ED06253DBDD8008E567C /* CountryStatisticsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1ED05253DBDD8008E567C /* CountryStatisticsFetchRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		EBC1ECFC253D98D8008E567C /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		EBC1ECFF253DB638008E567C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EBC1ED02253DBA2F008E567C /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
+		EBC1ED05253DBDD8008E567C /* CountryStatisticsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatisticsFetchRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				EB534F30253CBF12006F1BF9 /* CovidFetchRequest.swift */,
+				EBC1ED05253DBDD8008E567C /* CountryStatisticsFetchRequest.swift */,
 				EB534F3B253CC503006F1BF9 /* Model.swift */,
 			);
 			path = Model;
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC1ED06253DBDD8008E567C /* CountryStatisticsFetchRequest.swift in Sources */,
 				EBC1ECFA253D97A9008E567C /* CountryDetailRow.swift in Sources */,
 				EBC1ED00253DB638008E567C /* MapView.swift in Sources */,
 				EB534F31253CBF12006F1BF9 /* CovidFetchRequest.swift in Sources */,
