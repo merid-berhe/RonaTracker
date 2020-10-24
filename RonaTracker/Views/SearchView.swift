@@ -16,7 +16,7 @@ struct SearchView: View {
         
         HStack {
             
-            TextField("Country...", text: $searchText)
+            TextField("search for a country...", text: $searchText)
                 .padding()
         }
         

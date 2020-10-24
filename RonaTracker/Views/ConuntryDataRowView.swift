@@ -13,12 +13,15 @@ struct CountryDataRowView: View {
     
     var body: some View {
         
+        
+        
         HStack {
             Text(countryData.country)
                 .fontWeight(.medium)
                 .font(.subheadline)
                 .lineLimit(2)
                 .frame(width: 110, alignment: .leading)
+               
 
             Spacer()
             
@@ -48,13 +51,8 @@ struct CountryDataRowView: View {
                 .font(.subheadline)
                 .foregroundColor(.green)
         }
-
         
     }
-}
-
-struct CountryDataRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        CountryDataRowView(countryData: testCountryData)
-    }
+    
+   
 }

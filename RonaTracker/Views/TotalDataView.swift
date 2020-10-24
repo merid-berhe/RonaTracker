@@ -25,9 +25,9 @@ struct TotalDataView: View {
             
             HStack {
                 
-                TotalDataCard(number: String(format: "%.2f", totalData.fatalityRate), name: "Death %", color: .red)
+                TotalDataCard(number: String(format: "%.2f", totalData.fatalityRate), name: "Death (%)", color: .red)
                 TotalDataCard(number: totalData.recovered.formatNumber(), name: "Recovered", color: .green)
-                TotalDataCard(number: String(format: "%.2f", totalData.recoveredRate), name: "Recovery %    ", color: .green)
+                TotalDataCard(number: String(format: "%.2f", totalData.recoveredRate), name: "Recovery (%)    ", color: .green)
             
             }
             

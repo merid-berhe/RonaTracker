@@ -16,6 +16,10 @@ struct RecentView: View {
     @State var searchText = ""
     @State var isSearchVisible = false
     
+    init() {
+            UINavigationBar.appearance().backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        }
+    
     var body: some View {
         
         NavigationView {
@@ -38,13 +42,15 @@ struct RecentView: View {
                         NavigationLink(destination: CountryDetailView(countryName: countryData.country)) {
                             
                             CountryDataRowView(countryData: countryData)
+                                .listStyle(PlainListStyle())
                         }
+                        
                     }
                 }
                 
             }//End of VStack
-                .navigationBarTitle("Recent Data", displayMode: .inline)
-                .navigationBarItems(trailing:
+            .navigationBarTitle("Global Covid Cases", displayMode: .inline)
+            .navigationBarItems(trailing:
                     
                     Button(action: {
                         
@@ -59,7 +65,7 @@ struct RecentView: View {
                     })
             )
             
-        }//End of Navigation view
+        }  //End of Navigation view
         
     }
 }

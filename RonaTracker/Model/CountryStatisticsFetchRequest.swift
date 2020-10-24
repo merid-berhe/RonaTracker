@@ -29,9 +29,9 @@ class CountryStatisticsFetchRequest: ObservableObject {
             if result != nil {
                 
                 let json = JSON(result!)
-                //                print(json)
+                                print(json)
                 
-                //                print(json["response"][0])
+                                print(json["response"][0])
                 
                 let country = json["response"][0]["country"].stringValue
                 
