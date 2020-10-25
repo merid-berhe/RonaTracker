@@ -12,17 +12,14 @@ struct CountryDataRowView: View {
     var countryData: CountryData
     
     var body: some View {
-        
-        
-        
-        HStack {
+       
+        HStack (spacing: 0) {
             Text(countryData.country)
                 .fontWeight(.medium)
                 .font(.subheadline)
                 .lineLimit(2)
                 .frame(width: 110, alignment: .leading)
                
-
             Spacer()
             
             Text(countryData.confirmed.formatNumber())
@@ -51,8 +48,11 @@ struct CountryDataRowView: View {
                 .font(.subheadline)
                 .foregroundColor(.green)
         }
-        
     }
-    
-   
+}
+
+struct ConuntryDataRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
 }

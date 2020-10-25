@@ -18,7 +18,7 @@ struct ContentView: View {
         
         TabView {
             
-            RecentView().tabItem{
+            RecentView().tabItem {
                 Image(systemName: "waveform.path.ecg").font(.system(size: 20, weight: .bold, design: .rounded))
                     Text("Cases")
             
@@ -34,9 +34,6 @@ struct ContentView: View {
         } .onAppear() {
             UITabBar.appearance().isTranslucent = true
         } .accentColor(.red)
-        
-        
-        
     }
 }
 

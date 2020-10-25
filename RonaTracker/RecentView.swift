@@ -24,7 +24,7 @@ struct RecentView: View {
         
         NavigationView {
             
-            VStack {
+            VStack (spacing: 0) {
                 
                 if isSearchVisible {
                     SearchView(searchText: $searchText)
@@ -42,13 +42,12 @@ struct RecentView: View {
                         NavigationLink(destination: CountryDetailView(countryName: countryData.country)) {
                             
                             CountryDataRowView(countryData: countryData)
-                                .listStyle(PlainListStyle())
+                                .listStyle(GroupedListStyle())
+                                
                         }
-                        
                     }
                 }
-                
-            }//End of VStack
+            } //End of VStack
             .navigationBarTitle("Global Covid Cases", displayMode: .inline)
             .listStyle(GroupedListStyle())
             .navigationBarItems(trailing:

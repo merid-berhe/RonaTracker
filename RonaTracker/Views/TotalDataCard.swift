@@ -32,8 +32,8 @@ struct TotalDataCard: View {
             } //end of VStack
             
             .frame(width: geometry.size.width, height: 80, alignment: .center)
-            .background(Color("cardBackgroundColor"))
-            .cornerRadius(8.0)
+//            .background(Color("cardBackgroundColor"))
+//            .cornerRadius(8.0)
         
         } //end of geometry
         

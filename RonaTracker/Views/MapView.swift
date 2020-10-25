@@ -36,7 +36,6 @@ struct MapView: UIViewRepresentable {
         
         return MKMapView()
     }
-    
 }
 
 class CoronaCaseAnnotation: NSObject, MKAnnotation {
