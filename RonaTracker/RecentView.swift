@@ -17,7 +17,7 @@ struct RecentView: View {
     @State var isSearchVisible = false
     
     init() {
-            UINavigationBar.appearance().backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        UINavigationBar.appearance().backgroundColor = .clear
         }
     
     var body: some View {
@@ -50,6 +50,7 @@ struct RecentView: View {
                 
             }//End of VStack
             .navigationBarTitle("Global Covid Cases", displayMode: .inline)
+            .listStyle(GroupedListStyle())
             .navigationBarItems(trailing:
                     
                     Button(action: {

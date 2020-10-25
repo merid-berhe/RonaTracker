@@ -11,45 +11,47 @@ struct ContentView: View {
     
     
     init() {
-            UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        UITabBar.appearance().backgroundColor = .clear
         }
     
     var body: some View {
-        let configuration = UIImage.SymbolConfiguration(weight: .ultraLight)
         
         TabView {
             
-            RecentView()
-                .tabItem{
-                    Tab(imageName: "waveform.path.ecg", text: "Cases")
+            RecentView().tabItem{
+                Image(systemName: "waveform.path.ecg").font(.system(size: 20, weight: .bold, design: .rounded))
+                    Text("Cases")
             
                 }
                 .tag(0)
             
-            MapContainerView()
-                .edgesIgnoringSafeArea(.vertical)
-                .tabItem{
-                    Tab(imageName: "mappin.circle.fill", text: "Map")
-                }
+            MapContainerView().tabItem{
+                    Image(systemName: "mappin.circle.fill").font(.system(size: 20, weight: .bold))
+                    Text("Map")
+                        
+                } .edgesIgnoringSafeArea(.vertical)
                 .tag(1)
-        }
+        } .onAppear() {
+            UITabBar.appearance().isTranslucent = true
+        } .accentColor(.red)
+        
         
         
     }
 }
 
-private struct Tab: View {
-
-    let imageName: String
-    let text:  String
-    
-    var body: some View {
-        VStack {
-            Image(systemName: imageName)
-            Text(text)
-        }
-    }
-}
+//private struct Tab: View {
+//
+//    let imageName: String
+//    let text:  String
+//
+//    var body: some View {
+//        VStack {
+//            Image(systemName: imageName)
+//            Text(text)
+//        }
+//    }
+//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

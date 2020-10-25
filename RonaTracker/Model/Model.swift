@@ -56,6 +56,8 @@ struct DetailedCountryData {
     let newdeaths: Int
     let testsDone: Int
     
+    let timeUpdate: Int
+    
     
     
     var fatalityRate: Double {

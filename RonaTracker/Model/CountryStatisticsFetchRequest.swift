@@ -46,9 +46,10 @@ class CountryStatisticsFetchRequest: ObservableObject {
                 let newCases = json["response"][0]["cases"]["new"].intValue
                 let recoveredCases = json["response"][0]["cases"]["recovered"].intValue
                 
+                let timeUpdate = json["response"][0]["time"].intValue
                 
-                self.detailedCountryData = DetailedCountryData(country: country, confirmedCases: totalCases, newCases: newCases, recoveredCases: recoveredCases, criticalCases: criticalCases, activeCases: activeCases, deaths: deaths, newdeaths: newDeaths, testsDone: tests)
                 
+                self.detailedCountryData = DetailedCountryData(country: country, confirmedCases: totalCases, newCases: newCases, recoveredCases: recoveredCases, criticalCases: criticalCases, activeCases: activeCases, deaths: deaths, newdeaths: newDeaths, testsDone: tests, timeUpdate: timeUpdate)
                 
             }
         }

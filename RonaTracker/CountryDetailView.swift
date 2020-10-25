@@ -39,8 +39,6 @@ struct CountryDetailView: View {
                     
                     CountryDetailRow(number: String(format: "%.2f", countryStatisticsRequest.detailedCountryData?.recoveredRate ?? 0.0) + "%" , name: "Recovery Rate", color: .green)
 
-
-                    
                 }
                 
                 .background(Color("cardBackgroundColor"))

@@ -12,6 +12,7 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     @Binding var countryData: [CountryData]
+   
     
     func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
         
@@ -19,7 +20,7 @@ struct MapView: UIViewRepresentable {
         
         for data in countryData {
             
-            let title = data.country + "\n Confirmed " + data.confirmed.formatNumber() + "\n Death " + data.deaths.formatNumber()
+            let title = data.country + "\n Confirmed: " + data.confirmed.formatNumber() + "\n Death: " + data.deaths.formatNumber() + "\n Critical: " + data.critical.formatNumber()
             
             let coordinate = CLLocationCoordinate2D(latitude: data.latitude, longitude: data.longitude)
             

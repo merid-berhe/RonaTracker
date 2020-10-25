@@ -27,7 +27,7 @@ struct ListHeaderview: View {
             
             Spacer()
             
-            Text("Death")
+            Text("Deaths")
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(height: 40)
@@ -35,7 +35,7 @@ struct ListHeaderview: View {
             
             Spacer()
         
-            Text("Recover")
+            Text("Recoverd")
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(height: 40)
